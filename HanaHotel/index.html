@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> demo</title>
+	<link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/font-awesome/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/768.css" media="screen and (max-width: 1200px)">
+	<link rel="stylesheet" type="text/css" href="css/responsive/style_res.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+	<div class="pages-wrap">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 big-map">
+						<span class="text-map"><i class="fas fa-map-marker-alt"></i> No 6-7-8, Vo Cuong 4 Road, Bac Ninh
+							city</span>
+						<span class="text-phone"><i class="fas fa-phone-alt"></i> 0964 845 538/ 0969 150 946</span>
+					</div>
+					<div class="col-md-4 center-header">
+						<span class="small-header">
+							<a href="#">FAQ's</a>
+							<a href="#">Contact Us</a>
+							<a href="#">Phot Gallery</a>
+						</span>
+						<div class="dropdown font-dropdown">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								English</a>
+							<div class="dropdown-menu child-drowp" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#">English</a>
+								<a class="dropdown-item" href="#">한국어</a>
+								<a class="dropdown-item" href="#">Tiếng Việt</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="menu-mobile">
+			<div class="wrap">
+				<span onclick="openMenuMobile(false)" class="close-btn">
+					<i class="fas fa-times"></i>
+				</span>
+	
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li>
+						<a href="#">OUR HOTEL <i class="fas fa-angle-down" onclick="ChangeMenuMobile()"></i></a>
+						<ul id="ulmenu">
+							<li><a href="#">Hana 1 Apartment & Hotel</a></li>
+							<li><a href="#">Hana 2 Apartment & Hotel</a></li>
+						</ul>
+					</li>
+					<li><a href="#">ROOMS & SUITES</a></li>
+					<li>
+						<a href="#">OUR SERVICES <i class="fas fa-angle-down" onclick="ChangeMenuulMobile()"></i></a>
+						<ul id="menuul">
+							<li><a href="#">Breakfast</a></li>
+							<li><a href="#">Washing clother free</a></li>
+							<li><a href="#">Spa</a></li>
+							<li><a href="#">Pick-up Service</a></li>
+						</ul>
+					</li>
+					<li><a href="#">PROMOTIONS</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">TOURS INFO</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>	
+		<!-- <div class="content"> -->
+		<div class="bg-white sticky-top">
+					<div class="bg-mobile">
+						<div class="container">
+							<div class="menu">
+								<div class="left">
+									<a href="/">
+										<img src="https://hanahotel.com.vn/files/images/banner/logo%20chuan.png">
+									</a>
+								</div>
+			
+								<div class="right">
+									<ul>
+										<li><a href="#">HOME</a></li>
+										<li>
+											<a href="#">OUR HOTEL</a>
+											<ul>
+												<li><a href="#">Hana 1 Apartment & Hotel</a></li>
+												<li><a href="#">Hana 2 Apartment & Hotel</a></li>
+											</ul>
+										</li>
+										<li><a href="#">ROOMS & SUITES</a></li>
+										<li>
+											<a href="#">OUR SERVICES</a>
+											<ul>
+												<li><a href="#">Breakfast</a></li>
+												<li><a href="#">Washing clother free</a></li>
+												<li><a href="#">Spa</a></li>
+												<li><a href="#">Pick-up Service</a></li>
+											</ul>
+										</li>
+										<li><a href="#">PROMOTIONS</a></li>
+										<li><a href="#">NEWS</a></li>
+										<li><a href="#">TOURS INFO</a></li>
+										<li><a href="#">CONTACT US</a></li>
+										
+									</ul>
+									<span id="openMenu" class="fa fa-bars"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+		<div class="header-banner">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="https://hanahotel.com.vn/files/images/banner/IMG_2405.jpg" class="d-block w-100"
+							alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="https://hanahotel.com.vn/files/images/banner/IMG_2503.jpg" class="d-block w-100"
+							alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="https://hanahotel.com.vn/files/images/banner/IMG_2601.jpg" class="d-block w-100"
+							alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="https://hanahotel.com.vn/files/images/banner/IMG_2482-HDR.jpg" class="d-block w-100"
+							alt="...">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="nav-date">
+						<i class="fas fa-check"></i>
+						<h2>ROOMS &amp; RATES</h2>
+					</div>
+					<div class="navo-date">
+						<div class="date1-res">
+							<input type="text" id="datepicker" class="date1" value="2020-05-24">
+							<i class="fas fa-calendar-alt date1-header"></i>
+						</div>
+						<div class="date1-res1">
+							<input type="text" id="datepicker1" class="date1" value="2020-05-25">
+							<i class="fas fa-calendar-alt date2-header"></i>
+						</div>
+						<div class="date1-res2">
+							<select class="date3" id="select">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+							</select>
+						</div>
+						<div class="date1-res3">
+							<select class="date4">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+							</select>
+						</div>
+						<div class="date1-res4">
+							<input type="button" id="datepicker" class="date5" value="FIND THE BEST RATE">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="content mt-5">
+			<div class="content-desc">
+				<div class="container">
+					<div class="row">
+						<div class="col-md text-desc">
+							<h2>WELCOME TO HANA APARTMENT HOTEL!</h2>
+							<p>Hana Apartment Hotel is a system that includes 2 apartment hotels and located in Hudland
+								new urban area, centre of bacninh city. This area is known as a small Korean town with a
+								high density of foreign population who are working and living there.</br>
+								Stick with the vision that built luxury and modern hotels, but also have good
+								environment around. Therefore, the location of both hotels were selected nearby 2 big
+								parks in order to bring our valued guests not only the comfortable staying, but fresh
+								atmosphere for working also.</br>
+								In each apartment of our Hana Apartment Hotel, there is a small kitchen area with the
+								purpose is to give our guests who stay in the long-term a good condition of cooking
+								themselves, they can use our kitchen to cook every meal by their own ways.
+								Hana Aparment Hotel Bacninh – Apartment & Hotel for Business trip in Bac Ninh city!</p>
+						</div>
+						<div class="col-md">
+							<img src="https://hanahotel.com.vn/files/images/rooms/ab.jpg" alt="" class="w-100">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-course mt-5">
+				<div class="container">
+					<div>
+						<h2>ROOMS & SUITES</h2>
+					</div>
+					<div>
+						<div id="slide1" class="owl-carousel owl-theme mt-3">
+							<div class="item">
+								<div class="card content-img">
+									<img src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										class="card-img-top img-course" alt="...">
+									<div class="card-body">
+										<p class="card-text">Suite rooms are only available in Hana 1 Apartment &amp;
+											Hotel&nbsp; Bac Ninh and designed ...</p>
+									</div>
+									<span class="money-price">From: <span class="color-price">500,000 VND</span></span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card content-img">
+									<img src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										class="card-img-top img-course" alt="...">
+									<div class="card-body">
+										<p class="card-text">Suite rooms are only available in Hana 1 Apartment &amp;
+											Hotel&nbsp; Bac Ninh and designed ...</p>
+									</div>
+									<span class="money-price">From: <span class="color-price">500,000 VND</span></span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card content-img">
+									<img src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										class="card-img-top img-course" alt="...">
+									<div class="card-body">
+										<p class="card-text">Suite rooms are only available in Hana 1 Apartment &amp;
+											Hotel&nbsp; Bac Ninh and designed ...</p>
+									</div>
+									<span class="money-price">From: <span class="color-price">500,000 VND</span></span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card content-img">
+									<img src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										class="card-img-top img-course" alt="...">
+									<div class="card-body">
+										<p class="card-text">Suite rooms are only available in Hana 1 Apartment &amp;
+											Hotel&nbsp; Bac Ninh and designed ...</p>
+									</div>
+									<span class="money-price">From: <span class="color-price">500,000 VND</span></span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card content-img">
+									<img src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										class="card-img-top img-course" alt="...">
+									<div class="card-body">
+										<p class="card-text">Suite rooms are only available in Hana 1 Apartment &amp;
+											Hotel&nbsp; Bac Ninh and designed ...</p>
+									</div>
+									<span class="money-price">From: <span class="color-price">500,000 VND</span></span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card content-img">
+									<img src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										class="card-img-top img-course" alt="...">
+									<div class="card-body">
+										<p class="card-text">Suite rooms are only available in Hana 1 Apartment &amp;
+											Hotel&nbsp; Bac Ninh and designed ...</p>
+									</div>
+									<span class="money-price">From: <span class="color-price">500,000 VND</span></span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card content-img">
+									<img src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										class="card-img-top img-course" alt="...">
+									<div class="card-body">
+										<p class="card-text">Suite rooms are only available in Hana 1 Apartment &amp;
+											Hotel&nbsp; Bac Ninh and designed ...</p>
+									</div>
+									<span class="money-price">From: <span class="color-price">500,000 VND</span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="content-translate mt-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>SPECIAL OFFERS</h2>
+							<div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item content-img active">
+										<img src="https://hanahotel.com.vn/files/images/xyz.jpg"
+											class="d-block w-100 img-course" alt="...">
+									</div>
+									<div class="carousel-item content-img">
+										<img src="https://hanahotel.com.vn/files/images/xyz.jpg"
+											class="d-block w-100 img-course" alt="...">
+									</div>
+								</div>
+								<div class="text-translate">
+									<h2>Instantly get 5% discount by booking room on our website</h2>
+									<span>Dear guests,</br>On the occasion of our website's update,</br>we would like to
+										give you a 5% discount
+										&nbsp;</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h2>OUR SERVICES</h2>
+							<div class="row mt-3">
+								<div class="col-md-6 ">
+									<div class="breakfast mb-4">
+										<div class="img content-img">
+											<a href="#">
+												<img src="https://hanahotel.com.vn/files/images/Service/IMG_2601.jpg"
+													class="w-100 img-course">
+											</a>
+										</div>
+										<div class="text">
+											<h2><a href="#">Breakfast</a></h2>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 ">
+									<div class="breakfast mb-4">
+										<div class="img content-img">
+											<a href="#">
+												<img src="https://hanahotel.com.vn/files/images/rooms/lon_13_1126098931.jpg"
+													class="w-100 img-course">
+											</a>
+										</div>
+										<div class="text">
+											<h2><a href="#">Washing clother free</a></h2>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 ">
+									<div class="breakfast mb-4">
+										<div class="img content-img">
+											<a href="#">
+												<img src="https://hanahotel.com.vn/files/images/rooms/spa-arrangement-with-towel-soap-salt_23-2148268482.jpg"
+													class="w-100 img-course">
+											</a>
+										</div>
+										<div class="text">
+											<h2><a href="#">Spa</a></h2>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 ">
+									<div class="breakfast mb-4">
+										<div class="img content-img">
+											<a href="#">
+												<img src="https://hanahotel.com.vn/files/images/Service/dich-vu-san-bay-2.jpg"
+													class="w-100 img-course">
+											</a>
+										</div>
+										<div class="text">
+											<h2><a href="#">Pick-up Service</a></h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-testimonial mt-5">
+				<div class="container">
+					<div class="row">
+						<h2>TESTIMONIAL</h2>
+					</div>
+					<div class="row mt-5">
+						<div class="col-md-2 big-testimonial">
+							<div class="img-testimonial rounded-circle">
+								<img src="https://hanahotel.com.vn/files/images/l(1).JPG" class="rounded-circle">
+							</div>
+							<div class="text-testimonial">
+								<h2>"잠자리가 편하고 직원분이 매우 친절함" - Mr. Bonghoon</h2>
+							</div>
+						</div>
+						<div class="col-md-2 big-testimonial">
+							<div class="img-testimonial rounded-circle">
+								<img src="https://hanahotel.com.vn/files/images/%E1%BA%A3nh%20cv.jpg"
+									class="rounded-circle">
+							</div>
+							<div class="text-testimonial">
+								<h2>"직원분이 매우 친절하고 시설도 매우 청결하며 호텔이 주거 지역이여서 조용하여 매우 좋았음...." - MR. KOKO - BUSINESS</h2>
+							</div>
+						</div>
+						<div class="col-md-2 big-testimonial">
+							<div class="img-testimonial rounded-circle">
+								<img src="https://hanahotel.com.vn/files/images/Capturev.JPG" class="rounded-circle">
+							</div>
+							<div class="text-testimonial">
+								<h2>"THE HOTEL IS VERY NEW AND CLEAN, MAKING MY STAY COMFORTABLE..." - MR. DAVID VINE
+								</h2>
+							</div>
+						</div>
+						<div class="col-md-2 big-testimonial">
+							<div class="img-testimonial rounded-circle">
+								<img src="https://hanahotel.com.vn/files/images/l.JPG" class="rounded-circle">
+							</div>
+							<div class="text-testimonial">
+								<h2>"직원 한국말 대화가능.앞에 공원이 있어 운동하기 좋다.주변에 한국음식점 많다.한국인이 숙박하기에는 딱인거 같"- MR. DONGCHEOL LEE
+								</h2>
+							</div>
+						</div>
+						<div class="col-md-2 big-testimonial">
+							<div class="img-testimonial rounded-circle">
+								<img src="https://hanahotel.com.vn/files/images/phong%20c%E1%BA%A3nh%20du%20l%E1%BB%8Bch.jpg"
+									class="rounded-circle">
+							</div>
+							<div class="text-testimonial">
+								<h2>"NƠI Ở THOÁNG MÁT SẠCH SẼ NHÂN VIÊN TỪ LỄ TÂN TỚI PHỤC VỤ RẤT CHU ĐÁO VÀ NHIỆT
+									TÌNH..." - MƯỚP</h2>
+							</div>
+						</div>
+						<div class="col-md-2 big-testimonial">
+							<div class="img-testimonial rounded-circle">
+								<img src="https://hanahotel.com.vn/files/images/l(1).JPG" class="rounded-circle">
+							</div>
+							<div class="text-testimonial">
+								<h2>"잠자리가 편하고 직원분이 매우 친절함" - Mr. Bonghoon</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-gallery">
+				<div class="container-fluid">
+					<div class="row mt-5">
+						<h2>PHOTO GALLERY</h2>
+					</div>
+					<div class="grid-container">
+						<div class="row">
+							<div class="grid-container content-grid mt-3">
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Deluxe-double-room/IMG_2428.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Deluxe-double-room/IMG_2438.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2343-HDR.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2352-HDR.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room/IMG_2405.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-double-room-with-big-yard/_HKH3524.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-twin-room/IMG_2630-HDR.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-twin-room/IMG_2640-HDR.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana1-Suite-twin-room/IMG_2650.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana2-%20Suite-double-room/8P7A4128(1).JPG"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana2-%20Suite-double-room/IMG_2466.jpg"
+										alt="" class="img-course"></div>
+								<div class="grid-item content-img"><img
+										src="https://hanahotel.com.vn/files/images/rooms/Hana2-Suite-twin-room/IMG_2499.jpg"
+										alt="" class="img-course"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-child">
+				<div class="padding-footer">
+					<div class="row">
+						<div class="col-md-4 mt-3">
+							<p><i class="fa fa-building-o"></i>HANA 1 APARTMENT & HOTEL</p>
+							<p><i class="fas fa-map-marker-alt"></i> <a href="#">No 6-7-8, Vo Cuong 4 Road, Bac Ninh
+									city</a></p>
+							<p><i class="fas fa-phone-rotary"></i> <a href="#">(+84)222 3828283</a></p>
+							<p><i class="fas fa-phone-alt"></i> <a href="#">0964 845 538/ 0969 150 946</a></p>
+							<p><a href="#"><i class="fas fa-envelope"></i> info@hanahotel.com.vn</a></p>
+							<p><a href="#"><i class="fas fa-link"></i> https://hanahotel.vn/</a></p>
+							<div class="row border-icon">
+								<div class="col-md">
+									<img class="trip-footer" src="https://hanahotel.com.vn/Content/img/trip1.png"
+										style="width: 120px;">
+								</div>
+								<div class="col-md">
+									<div class="col-md">
+										<h4 class="widget-title">Connect Us On</h4>
+									</div>
+									<div class="col-md">
+										<div class="social-content">
+											<a href="#"><i class="fab fa-pinterest"></i></a>
+											<a href="#"><i class="fab fa-facebook"></i></a>
+											<a href="#"><i class="fab fa-twitter"></i></a>
+											<a href="#"><i class="fab fa-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md mt-5">
+									<img class="pay-bank" src="https://hanahotel.com.vn/Content/img/pay.png">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mt-3">
+							<div class="row">
+								<div class="col-md-6">
+									<h4>ABOUT US</h4>
+									<p><a href="#">Location & map</a></p>
+									<p><a href="#">Contact Us</a></p>
+								</div>
+								<div class="col-md-6">
+									<h4>NEED TO KNOW</h4>
+									<p><a href="#">Term & Conditions</a></p>
+									<p><a href="#">Privacy Policy</a></p>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mt-3">
+							<div class="row">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.480295324182!2d106.05554491423979!3d21.173070985920376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31350954a8df1227%3A0xb2e2abb84df4b5bf!2sHana%201%20Apartment%20%26%20Hotel%20Bac%20Ninh!5e0!3m2!1svi!2s!4v1590129080024!5m2!1svi!2s"
+									width="600" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+									aria-hidden="false" tabindex="0"></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="footer-bootom">
+							<p>Copyright ©Hana Apartment & Hotel- All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="zalo-fixed">
+
+			<a href="tel:0964845538">
+			<img src="https://hanahotel.com.vn/Content/img/callred.png" style="max-width:55px">
+			
+			</a>
+			
+		</div>
+		<div class="zalo-fixedd">
+
+			<a href="tel:0964845538">
+			<img src="img/zalo.png" style="max-width:55px">
+			
+			</a>
+			
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/effect.js"></script>
+<script src="js/main.js"></script>
+</html>

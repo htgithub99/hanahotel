@@ -1,0 +1,13 @@
+/* bg */
+.background {
+    display: none;
+}
+
+.menu .right a {
+    display: none;
+}
+.menu .right span {
+    display: inline-block;
+}
+
+

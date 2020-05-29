@@ -1,0 +1,651 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pages-wrap {
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+}
+
+.header-top {
+    line-height: 40px;
+    color: #aaa;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: relative;
+    z-index: 101;
+}
+
+.text-map {
+    margin-right: 10px;
+}
+
+.header-top a {
+    color: #aaa;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.header-top a:hover {
+    color: #aaa;
+    background-color: #fff;
+}
+
+.header-top .font-dropdown a:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    z-index: 1;
+    color: #FEB301;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.content-desc .text-desc {
+    text-align: justify;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.content-desc .text-desc h2 {
+    font-size: 25px;
+}
+
+.owl-carousel .card-text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.content-course .money-price {
+    padding: 15px;
+    color: rgb(58, 57, 57);
+    border-top: 1px solid #ccc;
+}
+
+.content-course .color-price {
+    font-size: 20px;
+    color: #FEB301;
+}
+
+.breakfast {
+    position: relative;
+    overflow: hidden;
+}
+
+.breakfast .img {
+    position: relative;
+}
+
+.breakfast .text {
+    background-color: #06060699;
+    position: absolute;
+    padding: 8px 20px 8px 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.breakfast a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.breakfast a:hover {
+    color: #FEB301;
+}
+
+#slide1.owl-carousel .owl-nav button span {
+    display: none;
+}
+
+#slide1.owl-carousel .owl-nav button.owl-prev::before {
+    position: relative;
+    content: "\f0a8";
+    font-family: "Font Awesome 5 Pro";
+
+}
+
+#slide1.owl-carousel .owl-nav button.owl-next::after {
+    content: "\f35a";
+    font-family: "Font Awesome 5 Pro";
+
+}
+
+#slide1.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 30%;
+    transform: translateY(50%);
+    left: 0;
+}
+
+#slide1.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 30%;
+    transform: translateY(50%);
+    right: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+
+}
+
+#slide1.owl-theme .owl-dots {
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+
+.content-translate .text-translate {
+    background-color: #06060699;
+    position: absolute;
+    top: 0%;
+    left: 20px;
+    width: 30%;
+    height: 100%;
+    color: #fff;
+    padding: 10px;
+}
+
+.content-translate .text-translate h2 {
+    font-size: 20px;
+}
+
+.content-translate .text-translate span {
+    font-size: 12px;
+    text-align: left;
+}
+
+.content-testimonial h2 {
+    margin: 0 auto;
+}
+
+.content-testimonial .img-testimonial {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.content-testimonial .img-testimonial .rounded-circle {
+    transition: 0.5s;
+}
+
+.content-testimonial .img-testimonial .rounded-circle:hover {
+    transform: scale(1.1);
+    border: 12px solid #FEB301;
+}
+
+.content-testimonial .img-testimonial img {
+    width: 100%;
+}
+
+.content-testimonial .text-testimonial {
+    margin-top: 20px;
+}
+
+.content-testimonial .text-testimonial h2 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.content-img {
+    overflow: hidden;
+}
+
+.img-course {
+    transition: 1s;
+}
+
+.img-course:hover {
+    transform: scale(1.1);
+}
+
+.content-gallery h2 {
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.footer {
+    background: url(https://hanahotel.com.vn/Plugins/assets/images/hotel/quanho.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-child {
+    padding: 0px 90px 0px 90px;
+    background-color: #000000ab;
+}
+
+.footer a {
+    color: #acacac;
+    font-size: 14px;
+
+}
+
+.footer p {
+    color: #acacac;
+}
+
+.footer a:hover {
+    color: #FEB301;
+    text-decoration: none;
+}
+
+.footer h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer .social-content a i {
+    border: 2px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.footer .social-content a i:hover {
+    border-color: #FEB301;
+}
+
+.footer .footer-bootom {
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 2px 0 20px;
+}
+
+.border-icon {
+    padding-top: 20px;
+    border-top: rgba(255, 255, 255, 0.3) 1px solid;
+}
+
+.footer .padding-footer {
+    padding: 30px;
+    line-height: 10px;
+}
+
+/* Css header-bottom */
+
+.header-bottom {
+    background-color: #0e0e0ecc;
+    margin-top: -85px;
+    position: relative;
+    padding: 22px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .nav-date  {
+    position: relative;
+    display: flex;
+    width: 30%;
+}
+
+.row .navo-date {
+    width: 70%;
+}
+.header-bottom .navo-date{
+    display: flex;
+    right: -14%;
+}
+
+.header-bottom h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.bg_color{
+    background-color: red;
+}
+
+
+.header-banner {
+    margin-top: -100px;
+}
+.header-bottom .date1-res,
+.header-bottom .date1-res1 {
+    width: 22%;
+    margin-right: 20px;
+}
+
+.header-bottom .date1-res2,
+.header-bottom .date1-res3 {
+    z-index: 0;
+    width: 12%;
+    margin-right: 20px;
+}
+
+.header-bottom .date1-res4 {
+    width: 25%;
+}
+
+.header-bottom .date1,
+.header-bottom .date3,
+.header-bottom .date4 {
+    height: 40px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header-bottom .date5 {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #FEB301;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+
+.header-bottom .date1 {
+    position: relative;
+} 
+
+.date1, .date2, .date3,.date4 {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0f0f0f00;
+    padding-left: 10px;
+}
+
+.date1-header {
+    left: 44%;
+    top: 42%;
+    position: absolute;
+    
+}
+
+.header-bottom .date2 {
+    position: relative;
+} 
+
+.date2-header {
+    position: absolute;
+    top: 42%;
+    right: 42%;
+    
+}
+
+select:hover {
+    color: #444645;
+}
+
+.date5 {
+    height: 40px;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 24px;
+    border: 0px;
+}
+.date5:hover {
+    border-color: #FEB301;
+    background-color: #fff;
+    color: #000;
+}
+
+.header-top .font-dropdown .dropdown-menu a:hover {
+    background-color: #FEB301;
+    color: rgb(255, 255, 255);
+}
+
+.header-bottom .nav-date i {
+    padding: 6px;
+    font-size: 22px;
+    color: #FEB301;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: solid 3px #FEB301;
+    border-radius: 50%;
+}
+
+.header-bottom .nav-date h2 {
+    position: relative;
+    top: 24%;
+}
+
+.header-bottom:before {
+    width: 100%;
+    height: 81px;
+    content: "";
+    display: block;
+    background: url(https://hanahotel.com.vn/Plugins/assets/images/bg_check-avi.png) no-repeat;
+    position: absolute;
+    top: 2px;
+    left: -15%;
+}
+
+/* css menu */
+.bg-white {
+    background-color: #150f0f78!important;
+}
+
+.menu {
+    line-height: 100px;
+    display: flex;
+}
+
+.menu ul {
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+.menu ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li ul li:hover {
+    background-color: #FEB301;
+    width: 100%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 13px;
+}
+
+.menu ul li ul {
+    display: none;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    width: 220px;
+}
+.menu ul li ul li {
+    width: 100%;
+}
+
+/* .menu ul li ul li a:hover{
+    color: #fff;
+} */
+
+.menu .left {
+    display: flex;
+    width: 20%;
+}
+
+.menu .right {
+    display: flex;
+    width: 80%;
+}
+
+/* .menu .right a:not(:last-child) {
+    margin-right: 20px;
+} */
+.menu .right {
+    justify-content: flex-end;
+}
+.menu .right a:hover {
+    color: #FEB301;
+}
+.menu .right ul li ul li a {
+    color: #000;
+}
+.menu .right ul li ul li a:hover {
+    color: #fff;
+}
+.menu .right ul li ul {
+    line-height: 40px;
+}
+/* menu-mobile */
+
+
+
+/* menu-mobile */
+.menu .right span {
+    display: none;
+    cursor: pointer;
+    padding: 34px 20px 0 0;
+}
+
+.menu .right .fa.fa-bars{
+    font-size: 40px;
+}
+
+#menu-mobile {
+    visibility: hidden;
+    opacity: 0;
+    top: 22%;
+    width: 280px;
+    background: #FEB301;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    transform: translateX(320px);
+    transition: transform 0.25s;
+}
+#menu-mobile.menuMobile{
+    visibility:visible ;
+    opacity: 1;
+    transform: translateX(0);
+}
+#menu-mobile a {
+    padding: 10px;
+}
+#menu-mobile a:hover {
+    background-color: #fff;
+    color: #000;
+}
+#menu-mobile .wrap {
+    position: relative;
+}
+#menu-mobile .wrap .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#menu-mobile ul {
+    list-style: none;
+}
+#menu-mobile ul a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    line-height: 42px;
+}
+#menu-mobile ul a:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menu .right a{
+    color: #fff;
+    font-weight: 600;
+}
+.bg-mobile.font-text a {
+    color: #000;
+}
+.zalo-fixed {
+    position: fixed;
+    z-index: 11;
+    bottom: 20px;
+    left: 20px;
+}
+.zalo-fixedd {
+    position: fixed;
+    z-index: 11;
+    bottom: 20px;
+    right: 2%;
+}
+#ulmenu {
+    display: none;
+}
+
+#ulmenu li a{
+    background-color: #ffffffa3;
+}
+
+#menuul{
+    display: none;
+}
+
+#menuul li a{
+    background-color: #ffffffa3;
+}
+
